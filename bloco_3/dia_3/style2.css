@@ -1,0 +1,15 @@
+h1, p{
+    text-align: center;
+}
+
+li:hover {
+    background-color: magenta;
+}
+
+li:active {
+    color: whitesmoke;
+}
+
+ul, ol{
+    list-style: none;
+}
