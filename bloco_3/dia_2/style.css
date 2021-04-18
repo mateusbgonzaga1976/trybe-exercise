@@ -1,0 +1,42 @@
+h1{
+    font-size: 65px;
+    color: orangered;
+    font-family: sans-serif;
+}
+
+p{
+    font-weight: 600px;
+    font-size: 3em;
+}
+
+body{
+    font-size: 16px;
+}
+
+#background_ul{
+    background-color: pink;
+}
+
+.style_p_ul{
+    background-color: darkgray;
+}
+
+.style_ul{
+    font-weight: bold;
+    font-style: italic;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#ama{
+    background-color: yellow;
+}
+
+#ver{
+    background-color: red;
+}
+
+#mar{
+    background-color: brown;
+}
