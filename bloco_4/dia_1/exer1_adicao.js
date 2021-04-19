@@ -1,7 +1,7 @@
 let a;
 let b;
-let adicao;
+let sum;
 
-adicao = a + b;
+sum = a + b;
 
-console.log(adicao);
+console.log(sum);
