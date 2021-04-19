@@ -1,7 +1,7 @@
 let a;
 let b;
-let subtracao;
+let minus;
 
-subtracao = a - b;
+minus = a - b;
 
-console.log(subtracao);
+console.log(minus);
