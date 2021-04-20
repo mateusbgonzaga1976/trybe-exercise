@@ -4,5 +4,5 @@ let inputLine = '';
 
 for(let index = 0; index <= size; index += 1){
     console.log(inputLine);
-    inputLine += symbol
+    inputLine += symbol;
 }
