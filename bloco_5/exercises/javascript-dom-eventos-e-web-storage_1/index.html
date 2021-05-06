@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+    
+        function modifytext(){
+            let paragraph = document.getElementsByTagName('p')[1];
+            paragraph.innerHTML = 'Morando nos EUA e trabalhando com desenvolvimento de software.';
+        }
+        modifytext();
+
+        function squareGreen(){
+            let changeGreen = document.getElementsByClassName('main-content')[0];
+            changeGreen.style.background = 'rgb(76, 164, 109)';
+        }
+        squareGreen();
+
+        function changedToWhite(){
+            let whiteSquare = document.getElementsByClassName('center-content')[0];
+            whiteSquare.style.background = 'white';
+        }
+        changedToWhite();
+
+        function correctText(){
+            let correctedText = document.getElementsByTagName('h1')[0];
+            correctedText.innerHTML = 'Exercicio 5.1 - JavaScript';
+        }
+        correctText();
+
+        function modifyUpperCase(){
+            let upperCase = document.getElementsByTagName('p')[0];
+            upperCase.innerHTML = upperCase.innerHTML.toUpperCase();
+        }
+        modifyUpperCase();
+
+        function showParagraphs(){
+            let showAllParagraphs = document.getElementsByTagName('p');
+            for(let index = 0; index < showAllParagraphs.length; index += 1){
+                console.log(showAllParagraphs[index].innerHTML);
+            }
+        }
+        showParagraphs();
+
+
+        /*Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+    </script>
+  </body>
+</html>
